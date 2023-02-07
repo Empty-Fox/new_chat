@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopDatingChat</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div>
+      <img src="img/logo.png" alt="logo" loading="lazy" class="logo_image" onclick="location.href='index.html';">
+    </div>
+    <div>
+      <ul id="nav">
+        <li><a href="https://www.google.com/">WebCams</a></li>
+        <li><a href="https://www.google.com/">Games</a></li>
+        <li><a href="https://www.google.com/">Videos</a></li>
+      </ul>
+    </div>
+    <div class="menu" id="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="main_block">
+    <div class="profile_title_block padding10">
+      <h2 class="name_girl"></h2>
+      <div class="online_block">
+        <div class="online_block_circle"></div>
+        <p>oNLINE</p>
+      </div>
+      <div style="width: 100%; padding-top: 18px;">
+        <div class="profile_line"></div>
+      </div>
+
+
+    </div>
+    <div class="block_img_profile">
+      <div thumbsslider class="swipe_big">
+        <div class="swiper-wrapper big_img_profile">
+          <div class="swiper-slide"><img src="#" alt="image" loading="lazy" class="user_photo_profile thisPhoto"></div>
+          <div class="swiper-slide"><img src="#" alt="image" loading="lazy" class="modal-hover-opacity_big thisPhoto">
+          </div>
+          <div class="swiper-slide"><img src="#" alt="image" loading="lazy" class="modal-hover-opacity_big thisPhoto">
+          </div>
+          <div class="img_withLock swiper-slide" style="display: flex; flex-direction: column;">
+            <p class="modal_lock lockText">To see more you need to register</p>
+            <img src="#" alt="image" loading="lazy" class="modal-hover-opacity_big blur_photo thisPhoto">
+            <img src="img/lock.png" alt="image" loading="lazy" class="lock">
+            <div class="profile_btn padding10 modal_lock">
+              <button
+                onclick="window.open('https://www.dates4sexx.com/c/0630a696a2f594ab?camp_id=paste&ban_id=paste&source_id=paste&cat_id=paste&key_id=paste&ad_form=signup_btn&ad_id=paste');">Sign
+                Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swipe_small">
+        <div class="swiper-wrapper small_img_profile">
+          <div class="swiper-slide"><img src="#" alt="image" loading="lazy" class="user_photo_profile"></div>
+          <div class="swiper-slide"><img src="#" alt="image" loading="lazy" class="modal-hover-opacity"></div>
+          <div class="swiper-slide"><img src="#" alt="image" loading="lazy" class="modal-hover-opacity"></div>
+          <div class="img_withLock swiper-slide">
+            <img src="#" alt="image" loading="lazy" class="modal-hover-opacity blur_photo">
+            <img src="img/lock.png" alt="image" loading="lazy" class="lock">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div class="profile_info padding10">
+      <div class="profile_info_main">
+        <p><b>City:</b> <span class="city_name"></span></p>
+      </div>
+      <div class="profile_info_main">
+        <p><b>Age:</b> <span class="age"></span></p>
+      </div>
+      <div class="profile_info_main">
+        <p><b>Status:</b> <span class="status"></span></p>
+      </div>
+      <div class="profile_info_details">
+        <p class="details"></p>
+      </div>
+    </div>
+    <div class="profile_btn padding10">
+      <button class="open_chat">rEQUEST SEX</button>
+    </div>
+    <div class="profile_a"><a href="index.html">Get Back</a></div>
+
+    <div class="banner300x100 banner300x100_profle">
+      <img class="banner300x100_img" src="img/300x100_middle/31_1.gif" alt="baner" loading="lazy"
+        onclick="redirect_func(this, 'https://www.dates4sexx.com/c/6a09caf32cb4ab3e?camp_id=paste&ban_id=paste&source_id=paste&cat_id=paste&key_id=paste&ad_form=profile_bn31&ad_id=paste')">
+    </div>
+  </div>
+
+  <img src="img/elips_profile.png" alt="image" loading="lazy" class="elips_profile">
+  <footer class="footer">
+    <div style="pointer-events: none;">
+      <p class="footer_year">topdating.chat © <span id="year_now">2020</span></p>
+    </div>
+    <div class="footer_doc">
+      <div> <a href="documentation/terms.html" class="footer__link" target="_blank">TERMS AND CONDITIONS</a></div>
+      <div> <a href="documentation/privacy.html" target="_blank" class="footer__link">PRIVACY POLICY</a></div>
+      <div> <a href="documentation/cancelsubsc.html" class="footer__link" target="_blank">CANCEL SUBSCRIPTION</a></div>
+    </div>
+  </footer>
+
+  <script src="js/profile_page.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swipe_small", {
+      loop: false,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".swipe_big", {
+      loop: false,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+  </script>
+
+</body>
+
+</html>

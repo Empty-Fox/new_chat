@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopDatingChat</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/chat.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chat-title">
+            <div style="display: flex;">
+                <div class="border_user_girl">
+                    <img src="#" class="image_profiles1 prof_redirect user_accountPhoto" style="display: block;"
+                        alt="users photo" loading="lazy">
+                </div>
+                <div class="signalPresent" id="signalPresent1" style="display: block;"></div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <span class="chat-title chat-title1 userName_val" style="display: block;"></span>
+                <span class="online_profile">Online</span>
+            </div>
+        </div>
+        <div id="id_back">
+            <img src="images/arrow_msg.png" alt="image" loading="lazy">
+            <button>GET BACK</button>
+        </div>
+        <div id="chat-message-list">
+            <div id="container1" class="container1"></div>
+        </div>
+        <div id="chat-form">
+            <img src="images/camera.png" alt="camera" loading="lazy" id="photo_modal_click">
+            <input type="text" placeholder="type a message" id="myTextField" class="enter_mes">
+            <img src="images/send_icon.png" alt="Add Attachment" id="id" loading="lazy">
+            <img src="images/send_icon.png" alt="Add Attachment" id="id_finish" loading="lazy">
+        </div>
+        <img src="../img/elips_profile.png" alt="image" loading="lazy" class="elips_profile">
+
+    </div>
+    <div class="stylick">
+        <!-- <div class="login-box">
+            <h2>To continue chatting <br> enter your e-mail</h2>
+            <form id="myForm" action="#" method="POST" novalidate="novalidate">
+                <div class="user-box">
+                    <input type="email" name="email" id="email" required="" placeholder="E-mail">
+                    <h2 id="result"></h2>
+                </div>
+                <button type="button" class="messageButton_chat" id="submit">CONTINUE</button>
+            </form>
+        </div> -->
+        <div class="login-box">
+            <h2 style="padding-bottom: 20px;">Press Continue to Get More</h2>
+            <button type="button" class="messageButton_chat"
+                onclick="window.open('https://www.dates4sexx.com/c/2b2bea6186337ae0?camp_id=paste&ban_id=paste&source_id=paste&cat_id=paste&key_id=paste&ad_form=chat_cont&ad_id=paste','_self');">CONTINUE</button>
+        </div>
+    </div>
+    <div class="photo_reg">
+        <div class="login-box">
+            <img src="images/camera.png" alt="photo" loading="lazy">
+            <h2 style="padding: 20px 0;">Please, register to share files</h2>
+            <button type="button" class="messageButton_chat" id="photo_reg_btn"
+                onclick="window.open('https://www.dates4sexx.com/c/2b2bea6186337ae0?camp_id=paste&ban_id=paste&source_id=paste&cat_id=paste&key_id=paste&ad_form=chat_cont&ad_id=paste','_self');">CONTINUE</button>
+        </div>
+    </div>
+    <div id="opacityBlock_photo"></div>
+    <div id="opacityBlock"></div>
+    <footer class="footer">
+        <div style="pointer-events: none;">
+            <p class="footer_year">topdating.chat © <span id="year_now">2020</span></p>
+        </div>
+        <div class="footer_doc">
+            <div> <a href="../documentation/terms.html" class="footer__link" target="_blank">TERMS AND CONDITIONS</a>
+            </div>
+            <div> <a href="../documentation/privacy.html" target="_blank" class="footer__link">PRIVACY POLICY</a></div>
+            <div> <a href="../documentation/cancelsubsc.html" class="footer__link" target="_blank">CANCEL
+                    SUBSCRIPTION</a></div>
+        </div>
+    </footer>
+    <script async src="js/data.js"></script>
+    <script async src="js/redirect_links.js"></script>
+    <script>
+        ////////////висота вікна сайта в моб......
+        const vh = window.innerHeight / 100;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    </script>
+    <script>
+        $('#photo_modal_click').click(function () {
+            $('#opacityBlock_photo').show()
+            $('.photo_reg').show();
+
+
+        })
+        $("#photo_reg_btn").click(function () {
+            $('#opacityBlock_photo').hide()
+            $('.photo_reg').hide()
+        })
+
+        $(document).mouseup(function (e) {
+            var container2 = $(".photo_reg");
+            if (container2.has(e.target).length === 0) {
+                container2.hide();
+                $("#opacityBlock_photo").hide();
+                $('body').css("overflow", "auto");
+            }
+        });
+    </script>
+
+
+
+</html>
