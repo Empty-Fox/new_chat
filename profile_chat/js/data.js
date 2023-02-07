@@ -372,22 +372,27 @@ var local_count = 0;
 
 if (localStorage.getItem("click_one_one") == null) {
   bot_message();
+
 }
 if (localStorage.getItem("click_one_one") == 0) {
   $("#container1").replaceWith(localStorage.getItem('htmltest'));
   timer_bot1();
+
 }
 if (localStorage.getItem("click_one_one") == 1) {
   $("#container1").replaceWith(localStorage.getItem('htmltest'));
   timer_bot2();
+
 }
 if (localStorage.getItem("click_one_one") == 2) {
   $("#container1").replaceWith(localStorage.getItem('htmltest'));
   timer_bot3();
+
 }
 if (localStorage.getItem("click_one_one") == 3) {
   $("#container1").replaceWith(localStorage.getItem('htmltest'));
   timer_bot4();
+
 }
 if (localStorage.getItem("click_one_one") == 4) {
   $("#container1").replaceWith(localStorage.getItem('htmltest'));

@@ -64,7 +64,7 @@ body {
 
 #chat-container {
     display: grid;
-    grid: 'chat-title' 67px 'chat-message-list' auto 'chat-form' 60px;
+    grid: 'chat-title' 67px 'chat-message-list' 1fr 'chat-form' 60px;
     max-width: 100%;
     width: 100%;
     background-color: #101010;
